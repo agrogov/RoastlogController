@@ -112,6 +112,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HM-10 Controller" id="neY-UU-gCa">
+                        <barButtonItem key="leftBarButtonItem" title="chart" id="Cz1-aa-ifp" userLabel="chart">
+                            <connections>
+                                <segue destination="3Fa-RQ-SKf" kind="push" id="3x5-dI-mfA"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="devices" id="KBU-3U-hyC">
                             <connections>
                                 <segue destination="12F-fX-SZs" kind="push" id="qWG-JA-71q"/>
@@ -127,6 +132,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="963" y="138"/>
+        </scene>
+        <!--Chart-->
+        <scene sceneID="BJ0-Ad-7Gl">
+            <objects>
+                <viewController title="Chart" id="3Fa-RQ-SKf" customClass="ChartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fp0-PY-XJA"/>
+                        <viewControllerLayoutGuide type="bottom" id="fQb-1O-aPu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zeC-BY-IRk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnF-LT-7Fm">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chart" id="kZN-1u-1YD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qG6-tc-UYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="-153"/>
         </scene>
         <!--Devices-->
         <scene sceneID="Kap-AN-0an">
@@ -164,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Xz-rU-p7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="138"/>
+            <point key="canvasLocation" x="1405" y="469"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Oj-d2-ALn">
