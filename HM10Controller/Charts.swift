@@ -36,6 +36,11 @@ class ChartsViewController: UIViewController {
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartView.data = lineChartData
+        
+        lineChartView.xAxis.labelPosition = .Bottom
+        
+        let ll = ChartLimitLine(limit: 10.0, label: "Target")
+        lineChartView.rightAxis.addLimitLine(ll)
     }
     
 
