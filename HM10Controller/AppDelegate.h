@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HM10Controller-Swift.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

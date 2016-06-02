@@ -136,23 +136,39 @@
         <!--Chart-->
         <scene sceneID="BJ0-Ad-7Gl">
             <objects>
-                <viewController title="Chart" id="3Fa-RQ-SKf" customClass="ChartViewController" sceneMemberID="viewController">
+                <viewController title="Chart" modalTransitionStyle="flipHorizontal" id="3Fa-RQ-SKf" customClass="ChartsViewController" customModule="HM10Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fp0-PY-XJA"/>
                         <viewControllerLayoutGuide type="bottom" id="fQb-1O-aPu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zeC-BY-IRk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnF-LT-7Fm">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-Te-rfI" userLabel="lineChartView" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tXh-Te-rfI" firstAttribute="leading" secondItem="zeC-BY-IRk" secondAttribute="leading" id="TbE-n4-zhs"/>
+                            <constraint firstAttribute="trailing" secondItem="tXh-Te-rfI" secondAttribute="trailing" id="ePi-y0-6Gv"/>
+                            <constraint firstItem="tXh-Te-rfI" firstAttribute="top" secondItem="Fp0-PY-XJA" secondAttribute="bottom" id="ja4-uA-jaw"/>
+                            <constraint firstItem="tXh-Te-rfI" firstAttribute="bottom" secondItem="fQb-1O-aPu" secondAttribute="top" id="zOh-rX-HfH"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chart" id="kZN-1u-1YD"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Chart" id="kZN-1u-1YD">
+                        <barButtonItem key="rightBarButtonItem" title="save" id="tF4-Pj-SCX">
+                            <connections>
+                                <action selector="saveChart:" destination="3Fa-RQ-SKf" id="mHa-Af-cdS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lineChartView" destination="tXh-Te-rfI" id="CP4-cM-Afu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qG6-tc-UYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

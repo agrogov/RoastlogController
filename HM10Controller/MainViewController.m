@@ -84,12 +84,12 @@
 
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
 {
-    int x = 0;
+    //int x = 0;
 }
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
-    int x = 0;
+    //int x = 0;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -95,7 +95,7 @@
 -(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
     int x = 0;
-    unsigned char* bytes = [[characteristic value] bytes];
+    //unsigned char* bytes = [[characteristic value] bytes];
     NSString * str = [[NSString alloc] initWithData:[characteristic value] encoding:NSUTF8StringEncoding];
     x = 1;
     NSLog(@"%@\n", str);
@@ -103,7 +103,7 @@
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverIncludedServicesForService:(CBService *)service error:(NSError *)error
 {
-    int x = 0;
+    //int x = 0;
 }
 
 // Table view methods
