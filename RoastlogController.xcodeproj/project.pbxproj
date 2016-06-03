@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA1EE7DB1D00C18D00AF0673 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EE7DA1D00C18D00AF0673 /* Charts.swift */; };
+		BACF2AFD1D01711B00B17E47 /* RoastlogController.profdata in Resources */ = {isa = PBXBuildFile; fileRef = BACF2AFC1D01711B00B17E47 /* RoastlogController.profdata */; };
 		BAFD9F061D00DEFA0012584F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD9EFF1D00DEF20012584F /* Charts.framework */; };
 		BAFD9F071D00DEFA0012584F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD9EFF1D00DEF20012584F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F346557018AF1A7300539E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F346556F18AF1A7300539E04 /* Foundation.framework */; };
@@ -89,7 +90,7 @@
 
 /* Begin PBXFileReference section */
 		BA1EE7DA1D00C18D00AF0673 /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
-		BAAE277F1CF4FCEA0090EEBF /* HM10Controller.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = HM10Controller.profdata; sourceTree = "<group>"; };
+		BACF2AFC1D01711B00B17E47 /* RoastlogController.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = RoastlogController.profdata; sourceTree = "<group>"; };
 		BAFD9EF71D00DEF20012584F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		F346556C18AF1A7300539E04 /* RoastlogController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoastlogController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F346556F18AF1A7300539E04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,7 +144,7 @@
 		BAAE277E1CF4FCEA0090EEBF /* OptimizationProfiles */ = {
 			isa = PBXGroup;
 			children = (
-				BAAE277F1CF4FCEA0090EEBF /* HM10Controller.profdata */,
+				BACF2AFC1D01711B00B17E47 /* RoastlogController.profdata */,
 			);
 			path = OptimizationProfiles;
 			sourceTree = "<group>";
@@ -361,6 +362,7 @@
 				F346558618AF1A7300539E04 /* Main_iPad.storyboard in Resources */,
 				F346558B18AF1A7300539E04 /* Images.xcassets in Resources */,
 				F346558318AF1A7300539E04 /* Main_iPhone.storyboard in Resources */,
+				BACF2AFD1D01711B00B17E47 /* RoastlogController.profdata in Resources */,
 				F346557A18AF1A7300539E04 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
